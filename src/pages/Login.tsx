@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown } from 'lucide-react';
+import { Crown, User } from 'lucide-react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
@@ -70,6 +70,17 @@ const Login = () => {
                   </a>
                 </p>
               </div>
+            </div>
+
+            {/* Botão Dashboard */}
+            <div className="mt-6 text-center">
+              <button 
+                onClick={() => window.location.href = '/dashboard'}
+                className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2"
+              >
+                <User className="h-5 w-5" />
+                Acessar Dashboard
+              </button>
             </div>
 
             <div className="mt-8 text-center">
