@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Heart, ShoppingCart } from 'lucide-react';
+import JewelryImage from './jewelry-image';
 
 const ProductsSection = () => {
   const featuredProducts = [
@@ -8,7 +9,7 @@ const ProductsSection = () => {
       name: 'Anel de Noivado Elegante',
       description: 'Diamantes brilhantes em ouro 18k',
       price: 'R$ 12.900',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop&crop=center',
       rating: 5
     },
     {
@@ -16,7 +17,7 @@ const ProductsSection = () => {
       name: 'Colar de Pérolas',
       description: 'Pérolas naturais com detalhes em prata',
       price: 'R$ 8.500',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center',
       rating: 4
     },
     {
@@ -24,7 +25,7 @@ const ProductsSection = () => {
       name: 'Brinco de Safira',
       description: 'Safiras azuis em ouro branco',
       price: 'R$ 6.800',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop&crop=center',
       rating: 5
     }
   ];
@@ -43,11 +44,11 @@ const ProductsSection = () => {
           {featuredProducts.map((product) => (
             <div key={product.id} className="group bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               {/* Product Image */}
-              <div className="relative h-80 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
-                <img 
+              <div className="relative h-80">
+                <JewelryImage 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="h-full"
                 />
                 <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Heart className="h-5 w-5 text-gray-600" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import JewelryImage from './jewelry-image';
 
 const ContactSection = () => {
   return (
@@ -68,8 +69,14 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div>
+          {/* Contact Form with Image */}
+          <div className="space-y-8">
+            <JewelryImage 
+              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=300&fit=crop&crop=center"
+              alt="Loja Crow & Grace"
+              className="h-48 rounded-2xl"
+            />
+            
             <div className="bg-gray-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Envie uma Mensagem</h3>
               
