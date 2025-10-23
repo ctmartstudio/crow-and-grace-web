@@ -1,6 +1,5 @@
 import React from 'react';
 import { Sparkles, Crown, Gem } from 'lucide-react';
-import JewelryImage from './jewelry-image';
 
 const HeroSection = () => {
   return (
@@ -66,13 +65,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Visual */}
           <div className="flex items-center justify-center">
-            <JewelryImage 
-              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=600&fit=crop&crop=center"
-              alt="Joias Crow & Grace"
-              className="w-full max-w-md h-auto rounded-3xl shadow-2xl"
-            />
+            <div className="w-full max-w-md h-auto rounded-3xl shadow-2xl bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center p-12">
+              <div className="text-center">
+                <Crown className="h-32 w-32 text-yellow-600 mx-auto mb-6" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Excelência em Cada Detalhe</h3>
+                <p>Tradição e inovação em joalheria</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

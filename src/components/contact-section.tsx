@@ -1,6 +1,5 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import JewelryImage from './jewelry-image';
 
 const ContactSection = () => {
   return (
@@ -69,73 +68,65 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form with Image */}
-          <div className="space-y-8">
-            <JewelryImage 
-              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=300&fit=crop&crop=center"
-              alt="Loja Crow & Grace"
-              className="h-48 rounded-2xl"
-            />
+          {/* Contact Form */}
+          <div className="bg-gray-50 p-8 rounded-2xl">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Envie uma Mensagem</h3>
             
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Envie uma Mensagem</h3>
-              
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Nome</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                      placeholder="Seu nome completo"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Telefone</label>
-                    <input 
-                      type="tel" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                      placeholder="(11) 99999-8888"
-                    />
-                  </div>
-                </div>
-
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Nome</label>
                   <input 
-                    type="email" 
+                    type="text" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                    placeholder="seu@email.com"
+                    placeholder="Seu nome completo"
                   />
                 </div>
-
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
-                    <option>Informações sobre produtos</option>
-                    <option>Agendar consulta</option>
-                    <option>Orçamento personalizado</option>
-                    <option>Outros</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
-                  <textarea 
-                    rows={4}
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Telefone</label>
+                  <input 
+                    type="tel" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                    placeholder="Como podemos ajudar você?"
-                  ></textarea>
+                    placeholder="(11) 99999-8888"
+                  />
                 </div>
+              </div>
 
-                <button 
-                  type="submit"
-                  className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
-                >
-                  Enviar Mensagem
-                </button>
-              </form>
-            </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input 
+                  type="email" 
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                  placeholder="seu@email.com"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                  <option>Informações sobre produtos</option>
+                  <option>Agendar consulta</option>
+                  <option>Orçamento personalizado</option>
+                  <option>Outros</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
+                <textarea 
+                  rows={4}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                  placeholder="Como podemos ajudar você?"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit"
+                className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
           </div>
         </div>
       </div>

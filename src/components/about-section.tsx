@@ -1,6 +1,5 @@
 import React from 'react';
 import { Crown, Award, Users } from 'lucide-react';
-import JewelryImage from './jewelry-image';
 
 const AboutSection = () => {
   return (
@@ -69,14 +68,10 @@ const AboutSection = () => {
 
           {/* Image/Visual */}
           <div className="relative">
-            <JewelryImage 
-              src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center"
-              alt="Joalheria Crow & Grace"
-              className="h-96 rounded-3xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-3xl flex items-end p-8">
-              <div className="text-white">
-                <h3 className="text-2xl font-bold mb-2">Excelência em Cada Detalhe</h3>
+            <div className="h-96 rounded-3xl bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+              <div className="text-center">
+                <Crown className="h-24 w-24 text-yellow-600 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Excelência em Cada Detalhe</h3>
                 <p>Tradição e inovação em joalheria</p>
               </div>
             </div>
