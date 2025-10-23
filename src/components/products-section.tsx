@@ -55,65 +55,6 @@ const ProductsSection = () => {
               </div>
 
               {/* Product Info */}
-              <div className="p-6
-<dyad-write path="src/components/products-section.tsx" description="Criando seção de produtos em destaque">
-import React from 'react';
-import { Star, Heart, ShoppingCart } from 'lucide-react';
-
-const ProductsSection = () => {
-  const featuredProducts = [
-    {
-      id: 1,
-      name: 'Anel de Noivado Elegante',
-      description: 'Diamantes brilhantes em ouro 18k',
-      price: 'R$ 12.900',
-      image: '/placeholder.svg',
-      rating: 5
-    },
-    {
-      id: 2,
-      name: 'Colar de Pérolas',
-      description: 'Pérolas naturais com detalhes em prata',
-      price: 'R$ 8.500',
-      image: '/placeholder.svg',
-      rating: 4
-    },
-    {
-      id: 3,
-      name: 'Brinco de Safira',
-      description: 'Safiras azuis em ouro branco',
-      price: 'R$ 6.800',
-      image: '/placeholder.svg',
-      rating: 5
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Coleções em Destaque</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Descubra nossas joias mais exclusivas, cuidadosamente selecionadas para você
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {featuredProducts.map((product) => (
-            <div key={product.id} className="group bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              {/* Product Image */}
-              <div className="relative h-80 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
-                <img 
-                  src={product.image} 
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Heart className="h-5 w-5 text-gray-600" />
-                </div>
-              </div>
-
-              {/* Product Info */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xl font-semibold text-gray-900">{product.name}</h3>
